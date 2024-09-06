@@ -1,8 +1,8 @@
 FROM ubuntu:24.04
 
-RUN sed -i 's@//.*archive.ubuntu.com@//mirrors.aliyun.com@g' /etc/apt/sources.list.d/ubuntu.sources &&\
-    sed -i 's@//security.ubuntu.com@//mirrors.aliyun.com@g' /etc/apt/sources.list.d/ubuntu.sources &&\
-    sed -i 's@//ports.ubuntu.com@//mirrors.aliyun.com@g' /etc/apt/sources.list.d/ubuntu.sources &&\
+RUN sed -i 's@//.*archive.ubuntu.com@//mirrors.tencent.com@g' /etc/apt/sources.list.d/ubuntu.sources &&\
+    sed -i 's@//security.ubuntu.com@//mirrors.tencent.com@g' /etc/apt/sources.list.d/ubuntu.sources &&\
+    sed -i 's@//ports.ubuntu.com@//mirrors.tencent.com@g' /etc/apt/sources.list.d/ubuntu.sources &&\
 	apt-get update &&\
     export DEBIAN_FRONTEND=noninteractive &&\
 	apt-get install -y --no-install-recommends openjdk-8-jre tzdata locales xfonts-utils fontconfig libreoffice-nogui &&\
