@@ -207,6 +207,8 @@
             <groupId>com.aspose</groupId>
             <artifactId>aspose-cad</artifactId>
             <version>${aspose-cad.version}</version>
+             <scope>system</scope>
+             <systemPath>${pom.basedir}/lib/aspose-cad-24.4.jar</systemPath>
         </dependency>
         <!-- 密钥算法 -->
         <dependency>
